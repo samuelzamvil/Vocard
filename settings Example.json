@@ -55,7 +55,7 @@
         "cache_cleanup": 43200
     },
     "playlist_settings": {
-        "max_playlist": 5,
+        "max_playlists": 5,
         "max_tracks_per_playlist": 500,
         "default_playlist_name": "Favourite"
     },
