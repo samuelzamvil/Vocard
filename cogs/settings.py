@@ -337,7 +337,7 @@ class Settings(commands.Cog, name="settings"):
     @app_commands.command(name="debug")
     async def debug(self, interaction: discord.Interaction):
         if interaction.user.id not in voicelink.Config().bot_access_user:
-            return await interaction.response.send_message("You are not able to use this command!")
+            return await interaction.response.send_message("You are not able to use this command!", ephemeral=True)
 
         memory = psutil.virtual_memory()
         disk = psutil.disk_usage(func.ROOT_DIR)
